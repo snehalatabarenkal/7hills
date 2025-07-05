@@ -1,0 +1,13 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: your-app
+spec:
+  replicas: 2
+  template:
+    spec:
+      containers:
+      - name: app
+        image: snehalatabarenkal/nginx:alpine:latest
+        ports:
+        - containerPort: 80
